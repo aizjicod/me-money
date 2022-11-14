@@ -55,6 +55,7 @@ gem 'cancancan'
 gem 'devise'
 gem 'jwt'
 gem 'letter_opener'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
