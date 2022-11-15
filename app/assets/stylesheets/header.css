@@ -1,0 +1,9 @@
+#header {
+  padding: 0.5em 1em;
+ background-color: #2b2bd8;
+ color: #fff;
+}
+
+#header-title {
+  text-align: center;
+}

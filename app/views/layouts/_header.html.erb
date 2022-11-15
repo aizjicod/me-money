@@ -1,0 +1,11 @@
+<header id="header">
+  <% if user_signed_in? %>
+    <p>navbar</p>
+  <% end %>
+  <h2 id="header-title"><%= h2 %></h2>
+  <% if user_signed_in? %>
+    <li class="nav-item nav-logout">
+      <%= link_to("Log out", destroy_user_session_path, method: :delete) %>
+    </li>
+  <%end%>
+</header>
