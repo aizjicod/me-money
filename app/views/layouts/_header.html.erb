@@ -2,10 +2,10 @@
   <% if user_signed_in? %>
     <p>navbar</p>
   <% end %>
-  <h2 id="header-title"><%= h2 %></h2>
+  <p id="header-title"><%= h2 %></p>
   <% if user_signed_in? %>
-    <li class="nav-item nav-logout">
-      <%= link_to("Log out", destroy_user_session_path, method: :delete) %>
-    </li>
+    <div class="nav-logout">
+      <%= link_to("Log out", destroy_user_session_path, method: :delete, class: 'logout-link') %>
+    </div>
   <%end%>
 </header>

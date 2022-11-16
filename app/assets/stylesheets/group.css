@@ -1,0 +1,36 @@
+
+
+#group-user {
+  text-align: center;
+  font-size: 1.5 !important;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0.5em 0;
+  height: min-content;
+}
+
+#groups {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.group-li {
+  width: 80%;
+  padding: 1em 1.5em;
+  list-style: none;
+  border: 1px solid #000;
+}
+
+.group-li.empty {
+  text-align: center;
+}
+
+.new-group-link {
+  display: block;
+  margin-top: 25px;
+  width: 80%;
+}

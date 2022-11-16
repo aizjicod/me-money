@@ -1,14 +1,21 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Groups</h1>
-
-<div id="groups">
-  <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-      <%= link_to "Show this group", group %>
-    </p>
-  <% end %>
+<%= render partial: 'layouts/header', locals: {h2: 'Categories'} %>
+<div id="group-container">
+  <h3 id="group-user"><%= current_user.name %></h3>
+  <ul id="groups">
+    <% if @groups.any? %>
+      <% @groups.each do |group| %>
+        <li class="group-li">
+          <%= render group %>
+          <p>
+            <%= link_to "Show this group", group %>
+          </p>
+        </li>
+      <% end %>
+    <% else %>
+      <li class="group-li empty">
+        no categories yet
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to "New group", new_group_path, class: 'new-group-link btn' %>
 </div>
-
-<%= link_to "New group", new_group_path %>
