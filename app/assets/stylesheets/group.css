@@ -1,4 +1,4 @@
-
+/* group pages */
 
 #group-user {
   text-align: center;
@@ -10,23 +10,49 @@
 }
 
 #groups {
-  margin: 0 auto;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1em 0;
+  background-color: #efefef;
 }
 
 .group-li {
-  width: 80%;
-  padding: 1em 1.5em;
+  background-color: #fefefe;
+  width: 90%;
+  padding: 0.5em;
   list-style: none;
   border: 1px solid #000;
+  display: flex;
 }
+
 
 .group-li.empty {
   text-align: center;
+}
+
+.li-group-link {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.group-icon {
+  font-size: 2.5em;
+}
+
+.group-name {
+  position: relative;
+  left: -20px;
+  color: #121212;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 .new-group-link {

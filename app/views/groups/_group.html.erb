@@ -1,17 +1,9 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
-
-</div>
+<p class="group-icon">
+  <%= group.icon %>
+</p>
+<p class="group-name">
+  <%= group.name %>
+</p>
+<p>
+  $<%= get_amount(group) %>
+</p>

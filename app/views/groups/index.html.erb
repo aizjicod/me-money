@@ -5,10 +5,9 @@
     <% if @groups.any? %>
       <% @groups.each do |group| %>
         <li class="group-li">
-          <%= render group %>
-          <p>
-            <%= link_to "Show this group", group %>
-          </p>
+          <%= link_to group_path(id: group.id), class: 'li-group-link' do %>
+            <%= render group %>
+          <% end %>
         </li>
       <% end %>
     <% else %>
