@@ -28,3 +28,18 @@
  background-color: #2b2bd8;
  color: #fff;
 }
+
+@media screen and (min-width:768px) {
+  .logo-img {
+    width: 60%;
+    height: 150px;
+  }
+
+  .splash-btns {
+   justify-content: center;
+  }
+
+  .splash-btn{
+    width: 45%;
+  }
+}
