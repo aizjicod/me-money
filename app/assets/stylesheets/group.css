@@ -81,15 +81,15 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 18px;
 }
 
 #group-show-information {
   width: 100%;
-  padding: 2em;
+  padding: 2em 10%;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
-  gap: 20px;
 }
 
 #show-information-icon {
@@ -97,21 +97,31 @@
 }
 
 #show-information-name {
-  position: relative;
-  left: -50px;
   color: #121212;
   text-transform: capitalize;
   font-weight: 700;
   font-size: 1.2em;
 }
 
+#show-information-total {
+  text-transform: capitalize;
+  position: relative;
+  left: 10%;
+}
+
 #group-expenses {
   width: 90%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 1em 0;
   background-color: #efefef;
+  gap: 12px;
+}
+
+.add-new-transaction {
+  display: block;
 }
 
 /* forms */
@@ -167,5 +177,18 @@
 
   .group-form-containers.select>select {
     width: 20%;
+  }
+
+  #group-show-information {
+    justify-content: space-around;
+  }
+
+  #show-information-name {
+    font-size: 2em;
+    position: relative;
+    left: -20%;
+  }
+  #show-information-total {
+    font-size: 2em;
   }
 }

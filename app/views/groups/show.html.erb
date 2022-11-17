@@ -4,8 +4,8 @@
   <div id="group-show-information">
     <p id="show-information-icon"><%= @group.icon %></p>
     <p id="show-information-name"><%= @group.name %></p>
-    <p>
-      $<%= get_amount(@group) %>
+    <p id="show-information-total">
+      Total: $<%= get_amount(@group) %>
     </p>
   </div>
   <ul id="group-expenses">
@@ -22,6 +22,6 @@
     <% end %>
   </ul>
   <div>
-    <%= link_to "Add transaction", new_group_expense_path(@group) %>
+    <%= link_to "Add transaction", new_group_expense_path(@group), class: 'add-new-transaction btn' %>
   </div>
 </div>
