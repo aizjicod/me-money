@@ -126,7 +126,8 @@
 
 /* forms */
 
-#new-group-form {
+#new-group-form,
+#new-expense-form {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -135,7 +136,8 @@
   gap: 18px;
 }
 
-.group-form-containers {
+.group-form-containers,
+.expense-form-containers {
   width: 80%;
   display: flex;
   justify-content: center;
@@ -143,7 +145,13 @@
   flex-wrap: wrap;
 }
 
-.group-form-containers.name>input {
+.expense-form-containers {
+  padding: .2em;
+}
+
+.group-form-containers.name>input,
+.expense-form-containers.name>input,
+.expense-form-containers.amount>input {
   padding: 0.5em 1em;
 }
 
@@ -156,7 +164,8 @@
   padding: 0.5em;
 }
 
-.group-form-containers.submit>input {
+.group-form-containers.submit>input,
+.expense-form-containers.submit>input{
   font-size: 1.5em;
   font-weight: 700;
   padding: 0.5em 1em;
@@ -164,6 +173,10 @@
   background-color: #6363f0;
   color: #fff;
   border-radius: 12px;
+}
+
+.expense-form-containers.checkboxs {
+  gap: 8px;
 }
 
 @media screen and (min-width: 768px) {

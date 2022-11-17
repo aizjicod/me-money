@@ -1,9 +1,2 @@
-<h1>New expense</h1>
-
+<%= render partial: 'layouts/header', locals: {h2: 'Expense'} %>
 <%= render "form", expense: @expense %>
-
-<br>
-
-<div>
-  <%= link_to "Back to category", group_path(id: params[:group_id]) %>
-</div>
