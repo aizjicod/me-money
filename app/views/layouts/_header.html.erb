@@ -1,0 +1,13 @@
+<header id="header">
+  <% if user_signed_in? %>
+    <p class="nav-back">
+      <%= link_to '◀︎', root_path %>
+    </p>
+  <% end %>
+  <p id="header-title"><%= h2 %></p>
+  <% if user_signed_in? %>
+    <div class="nav-logout">
+      <%= link_to("Log out", logout_path, class: 'logout-link') %>
+    </div>
+  <%end%>
+</header>

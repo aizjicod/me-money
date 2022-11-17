@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#splash {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#links {
+  text-align: center;
+  padding-top: 18px;
+}
+
+#links > a {
+  color: #000;
+  text-decoration: none;
+}
+
+#links > a:hover {
+  color: #4848eb;
+}
+
+.btn {
+  background-color: #4848eb;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  font-weight: 900;
+}
