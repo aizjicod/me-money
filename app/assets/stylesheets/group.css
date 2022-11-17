@@ -1,5 +1,5 @@
 /* group pages */
-
+/* group index */
 #group-user {
   text-align: center;
   font-size: 1.5 !important;
@@ -29,7 +29,7 @@
 
 
 .group-li.empty {
-  text-align: center;
+  justify-content: center;
 }
 
 .li-group-link {
@@ -59,4 +59,49 @@
   display: block;
   margin-top: 25px;
   width: 80%;
+}
+
+/* group show */
+
+#group-user-show {
+  text-align: center;
+  font-size: 1.5 !important;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0.5em 0;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#group-show-information {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+#show-information-icon {
+  font-size: 4em;
+}
+
+#show-information-name {
+  position: relative;
+  left: -50px;
+  color: #121212;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+#group-expenses {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  background-color: #efefef;
 }

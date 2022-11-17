@@ -8,6 +8,11 @@
  font-size: 1em;
 }
 
+.nav-back > a{
+  color: #fff;
+  text-decoration: none;
+}
+
 #header-title {
   text-align: center;
   font-size: 1.5em;

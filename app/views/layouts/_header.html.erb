@@ -1,6 +1,8 @@
 <header id="header">
   <% if user_signed_in? %>
-    <p>navbar</p>
+    <p class="nav-back">
+      <%= link_to '◀︎', root_path %>
+    </p>
   <% end %>
   <p id="header-title"><%= h2 %></p>
   <% if user_signed_in? %>
