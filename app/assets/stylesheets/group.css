@@ -1,5 +1,10 @@
 /* group pages */
 /* group index */
+#group-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 #group-user {
   text-align: center;
   font-size: 1.5 !important;
@@ -14,6 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 1em 0;
   background-color: #efefef;
 }
@@ -104,4 +111,11 @@
   align-items: center;
   padding: 1em 0;
   background-color: #efefef;
+}
+
+@media screen and (min-width: 768px) {
+  .new-group-link  {
+    width: 80% !important;
+  }
+
 }
