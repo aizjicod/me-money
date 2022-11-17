@@ -1,4 +1,5 @@
 /* group pages */
+
 /* group index */
 #group-container {
   display: flex;
@@ -8,7 +9,6 @@
 
 #group-user {
   text-align: center;
-  font-size: 1.5 !important;
   text-transform: uppercase;
   font-weight: 900;
   padding: 0.5em 0;
@@ -34,7 +34,6 @@
   border: 1px solid #000;
   display: flex;
 }
-
 
 .group-li.empty {
   justify-content: center;
@@ -73,7 +72,6 @@
 
 #group-user-show {
   text-align: center;
-  font-size: 1.5 !important;
   text-transform: uppercase;
   font-weight: 900;
   padding: 0.5em 0;
@@ -145,9 +143,9 @@
   flex-wrap: wrap;
 }
 
-.group-form-containers.name>input,
-.expense-form-containers.name>input,
-.expense-form-containers.amount>input {
+.group-form-containers.name > input,
+.expense-form-containers.name > input,
+.expense-form-containers.amount > input {
   padding: 0.5em 1em;
 }
 
@@ -155,13 +153,13 @@
   gap: 12px;
 }
 
-.group-form-containers.select>select {
+.group-form-containers.select > select {
   width: 45%;
   padding: 0.5em;
 }
 
-.group-form-containers.submit>input,
-.expense-form-containers.submit>input{
+.group-form-containers.submit > input,
+.expense-form-containers.submit > input {
   font-size: 1.5em;
   font-weight: 700;
   padding: 0.5em 1em;
@@ -191,7 +189,7 @@
     padding: 0.2em;
   }
 
-  .group-form-containers.select>select {
+  .group-form-containers.select > select {
     width: 20%;
   }
 
@@ -204,6 +202,7 @@
     position: relative;
     left: -20%;
   }
+
   #show-information-total {
     font-size: 2em;
   }

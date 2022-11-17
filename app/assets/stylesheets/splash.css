@@ -15,7 +15,7 @@
 }
 
 .splash-btn {
-  text-transform:uppercase;
+  text-transform: uppercase;
   width: 100%;
   font-size: 1.5em;
   padding: 1em;
@@ -25,21 +25,21 @@
 }
 
 .splash-btn:first-child {
- background-color: #2b2bd8;
- color: #fff;
+  background-color: #2b2bd8;
+  color: #fff;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .logo-img {
     width: 60%;
     height: 150px;
   }
 
   .splash-btns {
-   justify-content: center;
+    justify-content: center;
   }
 
-  .splash-btn{
+  .splash-btn {
     width: 45%;
   }
 }

@@ -1,14 +1,14 @@
 #header {
   padding: 0.5em 0;
- background-color: #2b2bd8;
- color: #fff;
- display: flex;
- justify-content: space-around;
- align-items: center;
- font-size: 1em;
+  background-color: #2b2bd8;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
 }
 
-.nav-back > a{
+.nav-back > a {
   color: #fff;
   text-decoration: none;
 }
