@@ -1,0 +1,29 @@
+<%= form_with(model: group, id: 'new-group-form') do |form| %>
+  <% if group.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
+      <ul>
+        <% group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="group-form-containers name">
+    <%= form.text_field :name, placeholder: 'Name' %>
+  </div>
+
+  <div class="group-form-containers select">
+    <%= form.label :icon, style: "display: block" %>: 
+     <%= form.select :icon, [['🎲'], ['🚘'], ['🛒'], ['🍕'], ['📚'], ['🎞️'], ['🎶'], ['🍎'],
+     ['👾'], ['✍🏽'], ['🏃🏽'], ['❤️'], ['⭐'], ['🐶'], ['🌳'], ['🌎'], ['🌙'], ['💧'], ['☀️'], ['🌹'],
+     ['🏈'], ['🥊'], ['✈️'], ['🏕️'], ['🚲'], ['🔨'], ['📆'], ['📎'], ['🔒'], ['📌'], ['✂️'], ['🕙'],
+     ['🧳'], ['❤️'], ['⚽️'], ['🎾'], ['🤿'], ['🎨'], ['🎳'], ['🎮'], ['⛽️'], ['🏟'], ['📺'], ['🛎'],] %>
+  </div>
+
+  <div class="group-form-containers submit">
+    <%= form.submit 'Create Category' %>
+  </div>
+<% end %>

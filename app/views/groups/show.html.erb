@@ -1,0 +1,27 @@
+<%= render partial: 'layouts/header', locals: {h2: 'Transaction'} %>
+<div id="group-user-show">
+  <h3 id="group-user show"><%= current_user.name %></h3>
+  <div id="group-show-information">
+    <p id="show-information-icon"><%= @group.icon %></p>
+    <p id="show-information-name"><%= @group.name %></p>
+    <p id="show-information-total">
+      Total: $<%= get_amount(@group) %>
+    </p>
+  </div>
+  <ul id="group-expenses">
+    <% if @group.expenses.any? %>
+      <% @group.expenses.order(created_at: :desc).each do |expense| %>
+        <li class="group-li">
+          <%= render partial: 'expenses/expense', locals: {expense: expense} %>
+        </li>
+      <% end %>
+    <% else %>
+      <li class="group-li empty">
+        haven't made transactions to this category
+      </li>
+    <% end %>
+  </ul>
+  <div class="div-add">
+    <%= link_to "Add transaction", new_group_expense_path(@group), class: 'btn-add' %>
+  </div>
+</div>

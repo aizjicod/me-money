@@ -1,0 +1,22 @@
+<%= render partial: 'layouts/header', locals: {h2: 'Categories'} %>
+<div id="group-container">
+  <h3 id="group-user"><%= current_user.name %></h3>
+  <ul id="groups">
+    <% if @groups.any? %>
+      <% @groups.each do |group| %>
+        <li class="group-li">
+          <%= link_to group_path(id: group.id), class: 'li-group-link' do %>
+            <%= render group %>
+          <% end %>
+        </li>
+      <% end %>
+    <% else %>
+      <li class="group-li empty">
+        no categories yet
+      </li>
+    <% end %>
+  </ul>
+  <div class="div-add">
+    <%= link_to "New Category", new_group_path, class: 'btn-add' %>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+#header {
+  padding: 0.5em 0;
+  background-color: #2b2bd8;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+}
+
+.nav-back > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header-title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.logout-link {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+}
