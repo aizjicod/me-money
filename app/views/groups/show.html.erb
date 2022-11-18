@@ -10,7 +10,7 @@
   </div>
   <ul id="group-expenses">
     <% if @group.expenses.any? %>
-      <% @group.expenses.each do |expense| %>
+      <% @group.expenses.order(created_at: :desc).each do |expense| %>
         <li class="group-li">
           <%= render partial: 'expenses/expense', locals: {expense: expense} %>
         </li>
