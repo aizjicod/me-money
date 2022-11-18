@@ -27,9 +27,9 @@ This is a [live version demo](https://me-money.onrender.com/) of the project.
 ## Author
 👤 **Alejandro torres**
 
-- GitHub: [@githubhandle](https://github.com/aizjicod)
-- Twitter: [@twitterhandle](https://twitter.com/aizijijr)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aiziji/)
+- GitHub: [@Aiziji](https://github.com/aizjicod)
+- Twitter: [@Aizijijr](https://twitter.com/aizijijr)
+- LinkedIn: [Alejandro Torres](https://www.linkedin.com/in/aiziji/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
