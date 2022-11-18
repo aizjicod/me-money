@@ -6,7 +6,9 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1 or /users/1.json
-  def show; end
+  def show
+    redirect_to root_path
+  end
 
   # GET /users/new
   def new
