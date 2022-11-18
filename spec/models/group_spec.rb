@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Group, type: :model do
   before :each do
-    @user = User.create!(id: 1, name: 'Alejandro', email: 'test@test.com', password: '123123', password_confirmation: '123123')
+    @user = User.create!(id: 1, name: 'Alejandro', email: 'test@test.com', password: '123123',
+                         password_confirmation: '123123')
   end
   subject do
     Group.create(
@@ -37,4 +38,3 @@ RSpec.describe Group, type: :model do
     end
   end
 end
-
